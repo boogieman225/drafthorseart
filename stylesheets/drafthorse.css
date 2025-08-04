@@ -5,43 +5,8 @@ html, body {
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+
     }
-
-  nav {
-    background-color: #333;
-    height: 90px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    height: 100%;
-  }
-
-  nav li {
-    margin: 0 1rem;
-  }
-
-  nav a {
-    color: burlywood;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.15em;
-    padding: 0.5rem 1rem;
-    transition: color 0.3s, border-bottom 0.3s;
-  }
-
-  nav a:hover {
-    color: #fff;
-    border-bottom: 2px solid burlywood;
-  }
-
 
     .container {
       display: grid;
@@ -71,16 +36,13 @@ html, body {
       color: #555;
     }
 
-    .producttypeheader {
-  background-color: yellow;
-  padding: 20px;
-  text-align: center;
-  font-size: 2rem;
-  color: black;
-  border: 1px solid black;
-}
-
-
+    .producttypeheader h1 {
+      font-size: 5em;
+      text-align: center;
+      color: #ddd;
+      margin-top: 5rem;
+      margin-bottom: 1em;
+    }
 
     .add-to-cart {
       background-color: #28a745;
@@ -113,7 +75,6 @@ html, body {
     }
 
     .bg {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photos/wood.jpg");
       height: 95vh; 
       background-position: center;
       background-repeat: no-repeat;
@@ -127,7 +88,6 @@ html, body {
     h1 {
       color: white;
       font-size: 3rem;
-      text-shadow: 2px 2px 5px #000;
       margin: 0;
       margin-top: -5em;
     }
@@ -147,11 +107,17 @@ html, body {
 
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-      padding: 2rem;
+      grid-template-columns: repeat(2, 1fr); /* always 2 per row */
+      gap: 20px;
+      padding: 25px;
       max-width: 1000px;
       margin: 0 auto;
+    }
+
+    .grid-container a {
+      color: inherit;
+      text-decoration: none;
+      display: block; /* Optional: makes the whole card clickable */
     }
 
     .grid-item {
@@ -169,8 +135,10 @@ html, body {
 
     .grid-item img {
       width: 100%;
-      height: 240px;
+      min-height: 80px;
+      max-height: 280px;
       object-fit: cover;
+      display: block;
     }
 
     .grid-item .info {
@@ -189,6 +157,33 @@ html, body {
       font-size: 1.1rem;
     }
     
+    @media (max-width: 500px) {
+  .grid-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* forces 2 but keeps it flexible */
+    gap: 12px;
+    padding: 10px;
+  }
+
+  .grid-item img {
+    min-height: 160px;
+    max-height: 150px;
+  }
+
+  .info h3 {
+    font-size: 1rem;
+  }
+
+  .info p {
+    font-size: 0.9rem;
+  }
+   .producttypeheader h1 {
+  font-size: 2em;
+  margin-top: 2rem;
+}
+}
+
+
+
     footer {
       background-color: #333;
       color: white;
@@ -196,14 +191,8 @@ html, body {
       padding: 1.5em 0;
     }
 
-
-
-
-
-
-
-    .site-footer {
-  background-color: #222;
+  .site-footer {
+  background-color: #B55A30;
   color: #eee;
   padding: 40px 20px 20px;
   font-size: 14px;
@@ -264,5 +253,5 @@ html, body {
   border-top: 1px solid #444;
   padding-top: 15px;
   font-size: 13px;
-  color: #aaa;
+  color: #fff;
 }

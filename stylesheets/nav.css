@@ -1,0 +1,96 @@
+nav {
+  background-color: #FAEBD7;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  flex-wrap: nowrap;
+}
+
+.brand {
+  font-size: 2rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #56554e;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #3C6382;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  margin-left: auto;
+  z-index: 11;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #56554e;
+}
+
+/* 🔧 Fixes applied here */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAEBD7;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out, padding 0.3s ease;
+    position: absolute;
+    top: 85%;
+    left: 0;
+    z-index: 10;
+  }
+
+  .nav-links.active {
+    max-height: 200px; /* Enough height to show all links */
+    padding: 1.5rem 0;
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper::after {
+  content: '';
+  flex-grow: 1;
+}
+
+.site-footer {
+  background-color: #222;
+  color: #eee;
+  padding: 40px 20px 20px;
+  font-size: 14px;
+}

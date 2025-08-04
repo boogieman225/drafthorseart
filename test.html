@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Draft Horse Art</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="item-container">
+    <img src="path-to-your-image.jpg" alt="Artwork Title" class="item-image"/>
+    <h1 class="item-title">"Sunset Over Prairie"</h1>
+    <p class="item-description">
+      A hand-painted piece capturing the warm hues of a prairie sunset. Acrylic on canvas, 16x20". Original work by DraftHorseArt.
+    </p>
+    <p class="item-price">$120.00 USD</p>
+    <button class="email-button" onclick="sendEmail()">Purchase</button>
+  </div>
+
+  <script>
+    function sendEmail() {
+      const subject = encodeURIComponent("Inquiry about 'Sunset Over Prairie'");
+      const body = encodeURIComponent("Hi DraftHorseArt,\n\nI'm interested in purchasing the 'Sunset Over Prairie' painting. Please let me know how to proceed.\n\nThank you!");
+      window.location.href = `mailto:drafthorseart@gmail.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+</body>
+</html>

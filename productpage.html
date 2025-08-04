@@ -3,67 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simple E-Commerce</title>
-  <link rel="stylesheet" href="drafthorse.css">
+  <title>Draft Horse Art</title>
+  <link rel="stylesheet" href="/stylesheets/nav.css"/>
+  <link rel="stylesheet" href="/stylesheets/drafthorse.css">
   <style>
-    nav {
-    background-color: #333;
-    height: 60px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+   
   </style>
 </head>
 <body>
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="producttypes.html">Products</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="contactpage.html">Contact</a></li>
-    </ul>
+    <div class="brand"><img src="/photos/thumbnails/logo/A-LogoVTHUMB.png"></div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="producttypes.html">Shop</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contactpage.html">Contact</a>
+    </div>
   </nav>
 
-  <div class="cart">
-    Cart Items: <span id="cart-count">0</span>
+  <div class="producttypeheader">
+    <h1>Artwork Styles</h1>
+  </div>
+<div class="producttypeheader">
+    <h1></h1>
   </div>
 
-  <div class="container" id="product-list">
-    <!-- Products will be injected here -->
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="photos/products/County Fair .jpg" alt="Product Image">
+      <div class="info">
+        <h3>Product Name</h3>
+        <p>$29.99</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="photos/products/Hay Season .jpg" alt="Product Image">
+      <div class="info">
+        <h3>Another Product</h3>
+        <p>$49.99</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="photos/products/Hay Season 2 .JPEG" alt="Product Image">
+      <div class="info">
+        <h3>Third Product</h3>
+        <p>$39.99</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="photos/products/Helping Hand .JPEG" alt="Product Image">
+      <div class="info">
+        <h3>Fourth Product</h3>
+        <p>$59.99</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="photos/products/Interseeding.png" alt="Product Image">
+      <div class="info">
+        <h3>Third Product Again</h3>
+        <p>$39.99</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="photos/products/Winter 2 .JPEG" alt="Product Image">
+      <div class="info">
+        <h3>Fourth Product Again</h3>
+        <p>$59.99</p>
+      </div>
+    </div>
+  </div>
+  
+   <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section about">
+      <h2>About Us</h2>
+      <p>Your trusted source for unique equine art and collectibles.</p>
+    </div>
+
+    <div class="footer-section links">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/productpage.html">Shop</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section social">
+      <h2>Follow Us</h2>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+      </div>
+    </div>
   </div>
 
-  <footer>
-    <p>&copy; 2025 Draft Horse. All rights reserved.</p>
-  </footer>
-
-  <script>
-    const products = [
-      { id: 1, name: "Product One", price: 19.99, image: "https://via.placeholder.com/200" },
-      { id: 2, name: "Product Two", price: 29.99, image: "https://via.placeholder.com/200" },
-      { id: 3, name: "Product Three", price: 39.99, image: "https://via.placeholder.com/200" },
-    ];
-
-    let cartCount = 0;
-    const productList = document.getElementById("product-list");
-
-    products.forEach(product => {
-      const productCard = document.createElement("div");
-      productCard.className = "product";
-      productCard.innerHTML = `
-        <img src="${product.image}" alt="${product.name}" />
-        <h3>${product.name}</h3>
-        <p>$${product.price.toFixed(2)}</p>
-        <button class="add-to-cart">Add to Cart</button>
-      `;
-
-      productCard.querySelector(".add-to-cart").addEventListener("click", () => {
-        cartCount++;
-        document.getElementById("cart-count").textContent = cartCount;
-      });
-
-      productList.appendChild(productCard);
-    });
-  </script>
+  <div class="footer-bottom">
+    &copy; 2025 Draft Horse Art | All rights reserved
+  </div>
+</footer>
+  <script src="script.js"></script>
 </body>
 </html>

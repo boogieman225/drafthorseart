@@ -4,38 +4,74 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Draft Horse Art</title>
-  <link rel="stylesheet" href="drafthorse.css">
-  <style>
-  body, html {
-    height: 100%;
-    margin: 0;
-  }
+  <link rel="stylesheet" href="/stylesheets/nav.css"/>
+  <link rel="stylesheet" href="/stylesheets/styles.css"/>
+  <link rel="stylesheet" href="/stylesheets/drafthorse.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  body {
+  background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url('photos/products/Interseeding.jpg');
+  background-size: cover;        /* Scale image to cover entire area */
+  background-position: center;   /* Center the image */
+  background-repeat: no-repeat;  /* Prevent tiling */
+  background-attachment: fixed;  /* Optional: keeps it from scrolling */
+  z-index: -1;                   /* Keep it behind everything */
+}
 
-  .bg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("photos/wood.jpg");
-    height: 95%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 </style>
 </head>
 <body>
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="producttypes.html">Products</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="contactpage.html">Contact</a></li>
-    </ul>
+    <div class="brand"><img src="/photos/thumbnails/logo/A-LogoVTHUMB.png"></div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="producttypes.html">Shop</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contactpage.html">Contact</a>
+    </div>
   </nav>
-
-  <div class="cart">
-    🛒 : <span id="cart-count">0</span>
-  </div>
   
-  <div class="bg"></div>
+  <div class="wrapper">
+    <h1>Hello!</h1>
+  </div>
+ 
+  <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section about">
+      <h2>About Us</h2>
+      <p>Your trusted source for unique equine art and collectibles.</p>
+    </div>
 
+    <div class="footer-section links">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/producttypes.html">Shop</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
 
+    <div class="footer-section social">
+      <h2>Follow Us</h2>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 Draft Horse Art | All rights reserved
+  </div>
+</footer>
+  <script src="script.js"></script>
 </body>
 </html>
