@@ -180,6 +180,9 @@ html, body {
   font-size: 2em;
   margin-top: 2rem;
 }
+.producttypeheader h1 {
+  margin-top: -1em;
+}
 }
 
 
