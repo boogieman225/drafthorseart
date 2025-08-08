@@ -5,3 +5,6 @@ function toggleMenu() {
 if (window.location.pathname === '/index.html') {
     window.history.replaceState({}, document.title, '/');
 }
+if (window.location.pathname.endsWith('.html')) {
+    window.history.replaceState({}, document.title, '/');
+}
