@@ -16,6 +16,14 @@ nav {
   flex-shrink: 0;
 }
 
+.logo {
+  height: 50px;     
+  width: auto;         
+  display: block;       
+  object-fit: contain;  
+}
+
+
 .nav-links {
   display: flex;
   gap: 1rem;
@@ -52,6 +60,10 @@ nav {
     flex-wrap: wrap;
   }
 
+  .logo {
+    height: 30px;
+  }
+
   .hamburger {
     display: flex;
   }
@@ -72,13 +84,16 @@ nav {
   }
 
   .nav-links.active {
-    max-height: 200px; /* Enough height to show all links */
+    max-height: 200px; 
     padding: 1.5rem 0;
   }
 }
-
+.indexbody {
+  margin-top: -30px;
+  max-height: 50%;
+}
 .wrapper {
-  min-height: 100%;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
 }
