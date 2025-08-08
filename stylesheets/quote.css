@@ -1,0 +1,53 @@
+
+@font-face {
+  font-family: 'WesternFont';
+  src: url('../fonts/Lost-Leonenst Bold.otf') format('opentype');
+  font-weight: bold; /* Set this as bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WesternFont';
+  src: url('../fonts/Lost-Leonest\ Reguler.otf') format('opentype');
+  font-weight: normal; /* Set this as regular */
+  font-style: normal;
+}
+
+blockquote {
+  font-family: 'WesternFont', Arial, "Helvetica Neue", Helvetica, sans-serif; 
+  font-weight: bold; 
+  font-style: italic;
+  font-size: 2em;
+  margin: 100px 0;
+  padding-left: 30px;
+  text-align: center;
+  color: white; 
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 95%;
+}
+
+blockquote h3 {
+  font-family: 'WesternFont', Arial, "Helvetica Neue", Helvetica, sans-serif; 
+  font-weight: normal; 
+  font-style: normal;
+  font-size: 1em;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  blockquote {
+    font-size: 1em; 
+    margin: 55px 0;
+    padding-left: 8px;  
+    color: white;  
+  }
+
+  blockquote h3 {
+    font-size: 18px;  
+    margin-top: 8px;
+    color: white;  
+  }
+}

@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="stylesheets/nav.css"/>
   <link rel="stylesheet" href="stylesheets/styles.css"/>
   <link rel="stylesheet" href="stylesheets/drafthorse.css"/>
+  <link rel="stylesheet" href="stylesheets/quote.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
 
@@ -18,11 +19,11 @@ html, body {
 }
 
 body {
-  background-image: linear-gradient(rgba(0.4,0,0,0), rgba(0, 0, 0, 0)), url('photos/Last-Round-Planting-Three-Way.jpg'); /* adjust to your path */
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.3)), url('photos/Last-Round-Planting-Three-Way.jpg'); /* adjust to your path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* stays in place on scroll */
+  background-attachment: fixed;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .page {
@@ -51,7 +52,13 @@ body {
 
 
   <div class="wrapper indexbody">
-    <h1>Hello</h1>
+    <blockquote id="quote">
+      <h2 id="quote-text">First you go with the horse..<br>then the horse goes with you..<br>then you go together</h2>
+      <h3 id="quote-author">- Tom Dorrance</h3>
+    </blockquote>
+
+    <br>
+    
     <div id="space"></div>
   </div>
   
@@ -89,5 +96,6 @@ body {
   </div>
 </footer>
   <script src="script.js"></script>
+  <script src="quote.js"></script>
 </body>
 </html>
