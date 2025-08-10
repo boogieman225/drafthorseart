@@ -11,6 +11,17 @@ html, body {
 .white {
   background-color: white;
 }
+.page {
+  height: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0, 0, 0, 0.3)), url('photos/Last-Round-Planting-Three-Way.jpg'); /* adjust to your path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 700px;
+}
+
     .container {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
