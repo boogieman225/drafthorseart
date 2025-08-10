@@ -90,20 +90,14 @@ nav {
     padding: 1.5rem 0;
   }
 }
-.indexbody {
-  margin-top: -30px;
-  max-height: 50%;
-}
+
 .wrapper {
   padding-top: 10px;
   display: flex;
   flex-direction: column;
 }
 
-.wrapper::after {
-  content: '';
-  flex-grow: 1;
-}
+
 
 .site-footer {
   background-color: #222;
