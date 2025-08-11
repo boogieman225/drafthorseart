@@ -1,28 +1,54 @@
+/* ========= Fonts ========= */
 @font-face {
   font-family: 'WesternFont';
   src: url('../fonts/Lost-Leonenst Bold.otf') format('opentype');
-  font-weight: bold; 
+  font-weight: bold;
   font-style: normal;
 }
 
+/* ========= Base / Layout ========= */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.wrapper.indexbody {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* Button row sits at the bottom of .wrapper */
+.button-container {
+  margin-top: auto;             /* pushes it down */
+  display: flex;
+  justify-content: center;      /* center horizontally */
+  padding-bottom: clamp(16px, 3vh, 40px); /* space above footer */
+}
+
+/* ========= Western "Browse" Button ========= */
 .western-button {
   font-family: 'WesternFont', cursive;
-  font-size: 2.5rem;
-  background-color: #A66E4A; /* Saddle brown */
-  color: #fff8e7; /* Warm parchment */
-  border: 3px solid #5C4033; /* Dark brown */
+  font-size: 2.2rem;
+  background-color: #A66E4A;    /* saddle brown */
+  color: #fff8e7;               /* parchment */
+  border: 3px solid #5C4033;    /* dark brown */
   border-radius: 8px;
-  padding: 25px 35px;
+  padding: 20px 32px;
   text-transform: uppercase;
   letter-spacing: 2px;
   box-shadow: 3px 3px 0 #5C4033;
-  transition: all 0.2s ease;
+  transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease;
   cursor: pointer;
-  margin: auto;
+  margin: 0; 
+  margin-bottom: 10%;
 }
 
 .western-button:hover {
-  background-color: #8B5E3C; /* Darker saddle brown */
+  background-color: #8B5E3C;
   transform: translate(-2px, -2px);
   box-shadow: 5px 5px 0 #5C4033;
 }
@@ -33,9 +59,15 @@
   box-shadow: 3px 3px 0 #5C4033;
 }
 
-@media screen and (max-width: 600px) {
+
+/* ========= Responsive ========= */
+@media (max-width: 600px) {
   .western-button {
-    font-size: 1.7em;
-    padding: 12px 28px;
+    font-size: 1.6rem;
+    padding: 12px 24px;
+    margin-bottom: 15%;
+  }
+  .button-container {
+    padding-bottom: 20px;
   }
 }
