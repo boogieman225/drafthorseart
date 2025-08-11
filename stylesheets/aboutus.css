@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'WesternFont';
+  src: url('../fonts/Lost-Leonenst Bold.otf') format('opentype');
+  font-weight: bold; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WesternFont';
+  src: url('../fonts/Lost-Leonest Reguler.otf') format('opentype');
+  font-weight: normal; 
+  font-style: normal;
+}
+body {
+    background-color: #FAEBD7;
+}
+.heading {
+  position: relative;
+  width: 100%;
+  height: clamp(260px, 45vh, 560px);   /* responsive height */
+  background: url("/photos/Mowing-Hay-RusticFULL.jpg") center / cover no-repeat;
+  overflow: hidden;
+}
+
+.heading::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.5), rgba(0,0,0,.5));
+}
+
+.heading_picture {
+  position: relative;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding-inline: 1rem;
+  text-align: center;
+}
+
+.heading h1 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2rem, 6vw, 4rem);
+  letter-spacing: .02em;
+  text-shadow: 0 2px 8px rgba(0,0,0,.35);
+}
+#about-heading {
+    font-family: 'WesternFont', Arial, "Helvetica Neue", Helvetica, sans-serif; 
+    font-weight: bold; 
+    font-style: italic;
+}
+.aboutUSINFO {
+    font-size: x-large;
+    padding: 5% 25% 5% 25%;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .aboutUSINFO {
+    font-size: large;
+    padding: 15px;
+    background-color: #fff;
+}
+}

@@ -1,5 +1,5 @@
 html, body {
-  background-color: #FAEBD7; /*FAEBD7*/
+  background-color: #FAEBD7;
     height: 100%;
       margin: 0;
       padding: 0;
@@ -191,6 +191,10 @@ html, body {
   color: #eee;
   padding: 40px 20px 20px;
   font-size: 14px;
+  position: static !important;
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-container {

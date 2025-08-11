@@ -1,0 +1,82 @@
+html, body { 
+    height: 100%;
+ }
+body {
+  margin: 0;
+  min-height: 100svh;        /* mobile-safe viewport unit */
+  min-width: 340px;
+  display: flex;
+  flex-direction: column;
+}
+.item-container {
+    padding-top: 10%;
+    text-align: center;
+}
+.item-container * {
+  padding: 10px;
+}
+.item-container img {
+    width: 80%;
+    border: 15px #A66E4A solid;
+    display: block;
+    margin: 0 auto;
+}
+
+.checkout-page {
+    flex: 1 0 auto;
+    padding-bottom: 5rem;
+}
+.email-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #8c9a79; /* warm peachy orange */
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px; /* rounded pill shape */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.email-button:hover {
+  background-color: #ffa031; /* slightly darker on hover */
+  transform: translateY(-2px); /* gentle lift effect */
+}
+
+.email-button:active {
+  background-color: #e98b26; /* deeper orange on click */
+  transform: translateY(0); /* press down */
+}
+
+.site-footer {
+  flex-shrink: 0;
+  position: static;          /* ensure not fixed/absolute */
+  width: 100%;
+  overflow: visible;         /* avoid accidental clipping */
+  box-sizing: border-box;
+  padding: 1.25rem 1rem;
+}
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+  .item-container {
+    padding-top: 15%;
+    text-align: center;
+}
+.item-container img {
+    width: 90%;
+    border: 8px #A66E4A solid;
+}
+.footer-container {
+    display: grid;
+    gap: .75rem;
+    grid-template-columns: 1fr;  /* stack sections */
+  }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+ 
+}

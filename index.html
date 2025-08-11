@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="stylesheets/styles.css"/>
   <link rel="stylesheet" href="stylesheets/drafthorse.css"/>
   <link rel="stylesheet" href="stylesheets/quote.css"/>
+  <link rel="stylesheet" href="stylesheets/western_button.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
 :root { --nav-h: 72px; }
@@ -41,6 +42,14 @@ body {
   background-repeat: no-repeat;
 }
 
+.button-container {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  min-height: 100vh;       /* full viewport height */
+}
+
+
 </style>
 </head>
 <body>
@@ -54,9 +63,9 @@ body {
     </div>
     <div class="nav-links" id="navLinks">
       <a href="index.html">Home</a>
-      <a href="producttypes.html">Shop</a>
-      <a href="aboutus.html">About Us</a>
-      <a href="contactpage.html">Contact</a>
+      <a href="/producttypes/">Shop</a>
+      <a href="/aboutus/">About Us</a>
+      <a href="/contact/">Contact</a>
     </div>
   </nav>
 
@@ -66,10 +75,14 @@ body {
       <h2 id="quote-text">First you go with the horse..<br>then the horse goes with you..<br>then you go together</h2>
       <h3 id="quote-author">- Tom Dorrance</h3>
     </blockquote>
-
+    
     <br>
     
-    <div id="space"></div>
+    <div id="space">
+      <div class="button-container">
+        <button class="western-button">Browse</button>
+      </div>
+    </div>
   </div>
   
 </div>

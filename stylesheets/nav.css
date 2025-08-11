@@ -1,3 +1,6 @@
+body {
+  background-color: #FAEBD7;
+}
 nav {
  background-color: #FAEBD7;
   color: #fff;
@@ -88,6 +91,9 @@ nav {
   .nav-links.active {
     max-height: 200px; 
     padding: 1.5rem 0;
+  }
+  .page {
+    min-height: 500px;
   }
 }
 

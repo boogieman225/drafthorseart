@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'WesternFont';
+  src: url('../fonts/Lost-Leonenst Bold.otf') format('opentype');
+  font-weight: bold; 
+  font-style: normal;
+}
+
+.western-button {
+  font-family: 'WesternFont', cursive;
+  font-size: 2.5rem;
+  background-color: #A66E4A; /* Saddle brown */
+  color: #fff8e7; /* Warm parchment */
+  border: 3px solid #5C4033; /* Dark brown */
+  border-radius: 8px;
+  padding: 25px 35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 3px 3px 0 #5C4033;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  margin: auto;
+}
+
+.western-button:hover {
+  background-color: #8B5E3C; /* Darker saddle brown */
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 #5C4033;
+}
+
+.western-button:active {
+  background-color: #704528;
+  transform: translate(0, 0);
+  box-shadow: 3px 3px 0 #5C4033;
+}
+
+@media screen and (max-width: 600px) {
+  .western-button {
+    font-size: 1.7em;
+    padding: 12px 28px;
+  }
+}
