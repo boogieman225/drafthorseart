@@ -17,7 +17,7 @@ blockquote {
   font-weight: bold; 
   font-style: italic;
   font-size: 1.5em;
-  margin: 100px 0;
+  margin: 110px 0;
   padding-left: 30px;
   text-align: center;
   word-wrap: break-word;
@@ -38,11 +38,14 @@ blockquote h3 {
 }
 
 /* Mobile */
+@media screen and (max-height: 660px){
+  blockquote{ opacity: 0%;}
+}
 
 @media screen and (max-width: 600px) {
   blockquote {
     font-size: 12px; 
-    margin: 55px 0;
+    margin: 20px 0;
     padding-left: 8px;
   }
   blockquote h3 {
@@ -55,6 +58,7 @@ blockquote h3 {
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   blockquote {
+    margin-top: 5px;
     font-size: 20px; 
     padding-left: 20px;
   }
