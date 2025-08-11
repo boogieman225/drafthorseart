@@ -63,7 +63,7 @@ html, body {
 /* ========= Responsive ========= */
 @media (max-width: 600px) {
   .western-button {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     padding: 12px 24px;
     margin-bottom: 15%;
   }
