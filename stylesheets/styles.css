@@ -42,3 +42,17 @@ body, html {
   padding: 40px 20px 20px;
   font-size: 14px;
 }
+.dennie {
+  display: flex;
+  align-items: center;       /* vertically centers dash and image */
+  justify-content: center;   /* horizontally centers them as a group */
+  gap: 8px;                   /* space between dash and image */
+}
+
+.dennie p {
+  margin: 0; /* removes default paragraph margin */
+}
+
+.dennie img {
+  max-height: 200px; /* adjust to fit nicely with the dash */
+}

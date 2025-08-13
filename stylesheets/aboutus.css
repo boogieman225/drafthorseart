@@ -51,7 +51,7 @@ body {
 }
 .aboutUSINFO {
     font-size: x-large;
-    padding: 5% 25% 5% 25%;
+    padding: 50px;
     background-color: #fff;
 }
 
@@ -59,6 +59,13 @@ body {
     .aboutUSINFO {
     font-size: large;
     padding: 15px;
+    background-color: #fff;
+}
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+.aboutUSINFO {
+    font-size: large;
+    padding: 20px;
     background-color: #fff;
 }
 }
