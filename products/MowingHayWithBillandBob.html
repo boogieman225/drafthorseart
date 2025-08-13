@@ -6,12 +6,20 @@
   <title>Draft Horse Art</title>
   <link rel="stylesheet" href="../stylesheets/nav.css"/>
   <link rel="stylesheet" href="../stylesheets/styles.css"/>
-  <link rel="stylesheet" href="../tylesheets/styles.css" />
+  <link rel="stylesheet" href="../stylesheets/styles.css" />
   <link rel="stylesheet" href="../stylesheets/checkoutstyle.css">
   <link rel="stylesheet" href="../stylesheets/footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
   
+.item-container img {
+    max-width: 450px;
+    width: 80%;
+    border: 15px #A66E4A solid;
+    display: block;
+    margin: 0 auto;
+}
+
 
   </style>
 </head>
@@ -34,11 +42,14 @@
       </nav>
       
       <div class="item-container">
-        <img src="../photos/Last-Round-Planting-Three-Way.jpg" alt="Artwork Title" class="item-image"/>
-        <h1 class="item-title">"Sunset Over Prairie"</h1>
+        <img src="../photos//Watermark/Mowing-Hay-Bill-and-BobWM.jpg" alt="Artwork Title" class="item-image"/>
+        <h1 class="item-title">"Mowing Hay With Bill And Bob"</h1>
         <p class="item-description">
-          A hand-painted piece capturing the warm hues of a prairie sunset. Acrylic on canvas, 16x20". 
-          <br>
+          The cutter bar down, cutting well.<br>
+          Bill (right) loves this job and knows exactly where to walk for the best
+          cutting. <br>
+          Bob and I trust Bill to steer us correctly when cutting hay.
+          <br><br>
           Original work by DraftHorseArt.
         </p>
         <button class="email-button" onclick="sendEmail()">Email Us for Inquiry</button>
@@ -56,10 +67,10 @@
     <div class="footer-section links">
       <h2>Quick Links</h2>
       <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/producttypes.html">Shop</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../producttypes/">Shop</a></li>
+        <li><a href="../about/">About</a></li>
+        <li><a href="../contact/">Contact</a></li>
       </ul>
     </div>
 
@@ -81,8 +92,8 @@
 <script src="../script.js"></script>
   <script>
     function sendEmail() {
-      const subject = encodeURIComponent("Inquiry about 'Sunset Over Prairie'");
-      const body = encodeURIComponent("Hi DraftHorseArt,\n\nI'm interested in purchasing the 'Sunset Over Prairie' painting. Please let me know how to proceed.\n\nThank you!");
+      const subject = encodeURIComponent("Inquiry about 'Made Before John Deere Was Green'");
+      const body = encodeURIComponent("Hi DraftHorseArt,\n\nI'm interested in purchasing the 'Made Before John Deere Was Green' art. Please let me know how to proceed.\n\nThank you!");
       window.location.href = `mailto:drafthorseart@gmail.com?subject=${subject}&body=${body}`;
     }
   </script>

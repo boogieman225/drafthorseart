@@ -6,13 +6,19 @@
   <title>Draft Horse Art</title>
   <link rel="stylesheet" href="../stylesheets/nav.css"/>
   <link rel="stylesheet" href="../stylesheets/styles.css"/>
-  <link rel="stylesheet" href="../tylesheets/styles.css" />
+  <link rel="stylesheet" href="../stylesheets/styles.css" />
   <link rel="stylesheet" href="../stylesheets/checkoutstyle.css">
   <link rel="stylesheet" href="../stylesheets/footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
   
-
+.item-container img {
+    max-width: 650px;
+    width: 80%;
+    border: 15px #A66E4A solid;
+    display: block;
+    margin: 0 auto;
+}
   </style>
 </head>
 <body>
@@ -34,11 +40,14 @@
       </nav>
       
       <div class="item-container">
-        <img src="../photos/Last-Round-Planting-Three-Way.jpg" alt="Artwork Title" class="item-image"/>
-        <h1 class="item-title">"Sunset Over Prairie"</h1>
+        <img src="../photos//Watermark/Meadow-Lark-Country-Music-WM.jpg" alt="Artwork Title" class="item-image"/>
+        <h1 class="item-title">"Meadow Lark Country Music"</h1>
         <p class="item-description">
-          A hand-painted piece capturing the warm hues of a prairie sunset. Acrylic on canvas, 16x20". 
-          <br>
+          Real Country Music!<br>
+            One of the most enjoyable aspects of farming with horse drawn equipment...<br>
+            It’s quiet.<br>
+            You can see and hear the wildlife while working.
+          <br><br>
           Original work by DraftHorseArt.
         </p>
         <button class="email-button" onclick="sendEmail()">Email Us for Inquiry</button>
@@ -81,8 +90,8 @@
 <script src="../script.js"></script>
   <script>
     function sendEmail() {
-      const subject = encodeURIComponent("Inquiry about 'Sunset Over Prairie'");
-      const body = encodeURIComponent("Hi DraftHorseArt,\n\nI'm interested in purchasing the 'Sunset Over Prairie' painting. Please let me know how to proceed.\n\nThank you!");
+      const subject = encodeURIComponent("Inquiry about 'Made Before John Deere Was Green'");
+      const body = encodeURIComponent("Hi DraftHorseArt,\n\nI'm interested in purchasing the 'Made Before John Deere Was Green' art. Please let me know how to proceed.\n\nThank you!");
       window.location.href = `mailto:drafthorseart@gmail.com?subject=${subject}&body=${body}`;
     }
   </script>
