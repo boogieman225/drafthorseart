@@ -4,7 +4,7 @@ const quotes = [
     author: "Tom Dorrance"
   },
   {
-    text: "Everything forced and misunderstood can never be beautiful",
+    text: "Anything forced and misunderstood can never be beautiful",
     author: "Xenophon"
   },
   {
