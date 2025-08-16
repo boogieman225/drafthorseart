@@ -1,4 +1,4 @@
-const email = 'test@yahoo.com';
+const email = 'contact@drafthorseart.com';
 
 function toggleMenu() {
   const navLinks = document.getElementById('navLinks');
