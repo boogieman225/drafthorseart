@@ -10,7 +10,62 @@
   <link rel="stylesheet" href="../stylesheets/contact.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-  
+    .contactustitle{
+      text-align: center;
+      font-size:50px;
+    }
+    .form-container {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+    #contactinvite {
+      padding: 35px;
+      text-align: center;
+      content: center;
+      width: 90%;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      font-size: large;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #007BFF;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
   </style>
 </head>
 <body>
@@ -37,7 +92,26 @@
     <div class="aboutUSINFO">
       <blockquote>
         <p>
-          Contact Us
+          <div class="contactustitle">Contact Us</div>
+          <p id="contactinvite">We’d be delighted to hear from you! If you’re dreaming of a personalized piece of art, curious to learn more about farm life,
+             or hoping to enjoy the charm of a winter sleigh ride, we’d love to share those experiences with you. 
+             Reach out anytime—we’re always happy to chat and help create memories you’ll treasure.</p>
+          <form action="https://formspree.io/f/xgvnajkz" method="post">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="First Name" required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="Last Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" required>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="Subject" rows="5" required></textarea>
+
+            <button type="submit">Send Email</button>
+          </form>
+
           <div class="dennie">
             <img src="../fonts/1x/dennie.webp">
           </div>
